@@ -3,22 +3,35 @@
   <head>
     <script src="https://fb.me/react-15.2.1.js"></script>
     <script src="https://fb.me/react-dom-15.2.1.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.js"></script>
     <meta charset="utf-8">
     <title>Welcome to React.js</title>
   </head>
   <body>
+
     <div id='react-container'></div>
-    <script>
+    <script type="text/babel">
       ReactDOM.render(
-        React.createElement('div', null, 'Welcome to React.js!'),
+        <h1>Welcome to React.js!</h1>,
         document.getElementById('react-container'))
     </script>
+
     <div id="react-intro-container"></div>
-    <script>
+    <script type="text/babel">
       ReactDOM.render(
-        React.createElement('div', null, 'React.js is fun to learn....'),
+        <h3>React.js is a interface framework created by Facebook</h3>,
         document.getElementById('react-intro-container'))
     </script>
 
+    <div id="react-list-container"></div>
+    <script type="text/babel">
+      ReactDOM.render(
+        <ul>
+          <li>item 1 </li>
+          <li>item 2</li>
+          <li>item 3</li>
+        </ul>,
+        document.getElementById('react-list-container'))
+    </script>
   </body>
 </html>
