@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://fb.me/react-15.2.1.js"></script>
+    <script src="https://fb.me/react-dom-15.2.1.js"></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.js"></script>
+    <meta charset="utf-8">
+    <title>React stateless component</title>
+  </head>
+  <body>
+    <!--Use stateless component -->
+    <div id="react-container"></div>
+    <script type="text/babel">
+      const MyComponent = () => {
+        return <div>
+                <h1>Hey There</h1>
+                <p> I am stateless fucntion that returns a react component</p>
+              </div>
+      }
+      ReactDOM.render(<MyComponent/>, document.getElementById('react-container'))
+    </script>
+  </body>
+</html>
